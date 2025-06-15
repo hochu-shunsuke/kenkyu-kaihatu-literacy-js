@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { getStaticPath } from "./config";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "研究開発リテラシー",
   description: "研究開発リテラシープロジェクト",
+  icons: {
+    icon: getStaticPath("/favicon.ico"),
+  },
 };
 
 export default function RootLayout({ children }) {
