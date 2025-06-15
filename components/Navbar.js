@@ -28,6 +28,12 @@ export default function Navbar() {
             >
               オセロ
             </Link>
+            <Link 
+              href="/simple" 
+              className="text-white hover:text-gray-300 transition-colors"
+            >
+              機能案
+            </Link>
           </div>
 
           {/* ユーザー情報 */}

@@ -1,0 +1,204 @@
+/* シンプルな昔のHTMLサイト風CSS - スコープ化 */
+
+.simple-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.simple-container h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.simple-container h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px 0 10px 0;
+  border-bottom: 1px solid #666;
+  padding-bottom: 5px;
+}
+
+.simple-container h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.simple-container p {
+  margin: 10px 0;
+}
+
+.simple-container button {
+  background-color: #f0f0f0;
+  border: 1px solid #999;
+  padding: 5px 10px;
+  margin: 5px 2px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  color: black;
+}
+
+.simple-container button:hover {
+  background-color: #e0e0e0;
+}
+
+.simple-container button:active {
+  background-color: #d0d0d0;
+}
+
+/* フォーム要素 */
+.simple-container input[type="color"] {
+  border: 1px solid #666;
+  margin: 5px;
+}
+
+/* ビデオとオーディオ */
+.simple-container video {
+  border: 1px solid #999;
+  margin: 10px 0;
+}
+
+.simple-container audio {
+  margin: 10px 0;
+}
+
+/* 情報表示エリア */
+.simple-container .info-box {
+  border: 1px solid #666;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #222;
+}
+
+.simple-container .error {
+  color: red;
+  font-weight: bold;
+}
+
+/* 写真ギャラリー */
+.simple-container .photos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.simple-container .photo-item {
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+}
+
+.simple-container .photo-item img {
+  max-width: 150px;
+  height: auto;
+  border: 1px solid #999;
+}
+
+/* Google Map */
+.simple-container iframe {
+  border: 1px solid #999;
+  margin: 10px 0;
+}
+
+/* リンクスタイル */
+.simple-container a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.simple-container a:visited {
+  color: purple;
+}
+
+.simple-container a:hover {
+  background-color: yellow;
+}
+
+/* 点滅アニメーション */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.simple-container .blink {
+  animation: blink 1s infinite;
+}
+
+/* 訪問者カウンター風 */
+.simple-container .counter {
+  background-color: black;
+  color: lime;
+  font-family: 'Courier New', monospace;
+  padding: 5px;
+  border: 1px solid #999;
+  display: inline-block;
+}
+
+/* 小さなアイコン風 */
+.simple-container .icon {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 600px) {
+  .simple-container {
+    padding: 10px;
+  }
+  
+  .simple-container .photos-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .simple-container iframe {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+/* シンプルなテーブル風レイアウト */
+.simple-container .simple-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+.simple-container .simple-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  vertical-align: top;
+}
+
+/* カラーディスプレイ */
+.simple-container .color-display {
+  border: 1px solid #666;
+  padding: 20px;
+  margin: 10px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* その他のシンプルなスタイル */
+.simple-container .center {
+  text-align: center;
+}
+
+.simple-container .bold {
+  font-weight: bold;
+}
+
+.simple-container hr {
+  border: none;
+  border-top: 1px solid #666;
+  margin: 20px 0;
+}
